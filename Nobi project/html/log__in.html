@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+
+    <script src="https://kit.fontawesome.com/b8adea1cc3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-------------------------HEADER SECTION------------------------->
+        <header>
+            <nav class="nav">
+                <div class="nav_logo"> <!-- NAVBAR LOGO -->
+                    <img src="../image/Nobi.svg" alt="Nobi logo">
+                </div>
+                <div class="sign-up"> <!-- SIGN UP -->
+                    <a class="member" href="#">Not a member?</a>
+                    <a class="up-now" href="#">Sign up now</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-------------------------LOG-IN SECTION------------------------->
+        <section id="log_in">
+            <div class="log_in_content">
+                <p class="title">Log in to Nobi</p>
+                <button class="log_in_google"> <!-- LOG IN WITH GOOGLE -->
+                    <div class="icon"><img src="../image/google+logo.svg" alt=""></div>
+                    <p>Log in with Google account</p>
+                </button>
+                <span>or</span>
+                <form class="log_in_form" action=""> <!-- FORM -->
+                    <div class="form_input">
+                        <input type="email" id="email" placeholder=" " class="input">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form_input"> 
+                        <input type="password" id="password" placeholder=" " class="input">
+                        <label for="password">Password</label>
+                        <i class="far fa-eye" id="togglePassword"></i>
+                    </div>
+                    <p class="forgot-pw">Forgot password?</p>
+                </form>
+                <a href="./prof_balance.html">
+                    <button class="log-in text green-btn"> <!-- LOG IN -->
+                        Log in
+                    </button>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- LOG-IN JS -->
+    <script src="../js/log-in.js"></script>
+</body>
+</html>

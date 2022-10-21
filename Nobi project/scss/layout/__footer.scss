@@ -1,0 +1,61 @@
+//* FOOTER *//
+.footer{
+    
+    //? FOR-DESKTOP ?//
+    @include for-desktop{
+        width: 90%;
+        height: 70px;
+        margin: auto;
+        @include flex(nowrap,row-reverse,space-between,center);
+    }
+
+    //* FOOTER LINK*//
+    &_link{
+        height: 175px;
+        border-top: 3px solid $background;
+        @include flex(nowrap,column,center,center);
+        padding: 10px 0;
+
+        //? FOR-DESKTOP ?//
+        @include for-desktop{
+            border-top:none;
+            height: 100%;
+            width: 70%;
+        }
+        
+        ul{
+            @include flex(nowrap,column,center,center);
+            gap:17px;
+
+            @include for-desktop{
+                width: 100%;
+                @include flex(nowrap,row,flex-end,center);
+            }
+
+            li{
+                @include font(15px,normal,20px);
+                color: $gray2;
+            }
+        }
+    }
+    
+    //* COPYRIGHT *//
+    &_copyright{
+        height: 70px;
+        border-top: 3px solid $background;
+        @include flex(nowrap,row,center,center);
+
+        //? FOR-DESKTOP ?//
+        @include for-desktop{
+            border-top:none;
+            height: 100%;
+            width: 30%;
+            @include flex(nowrap,row,flex-start,center);
+        }
+
+        p{
+            @include font(15px,normal,20px);
+            color: $gray2;
+        }
+    }
+}

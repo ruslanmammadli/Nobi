@@ -1,0 +1,410 @@
+//* MAIN & CONTAINER *//
+#main-balance{
+    background-color: $background;
+
+    //? FOR-DESKTOP ?//
+    @include for-desktop{
+        padding-bottom: 7%;
+    }
+
+   .container{
+       width: 100%;
+    }
+
+    //? FOR-DESKTOP ?//
+    @include for-desktop{
+       .container{
+        width: 90%;
+        min-height: 100%;
+        margin: auto;
+        display: flex;
+       }
+    }
+}
+
+#main-balance{
+    //? FOR-DESKTOP ?//
+    @include for-desktop{
+        padding-top: 30px;
+        display: flex;
+    }
+}
+
+.balance-container{
+    //? FOR-DESKTOP ?//
+    @include for-desktop{
+        flex: 3;
+    }
+}
+
+//* BALANCE *//
+.balance{
+
+    &_activity{
+        background-color: white;
+        border-radius: 8px;
+    }
+
+    &_account{
+        //? FOR-DESKTOP ?//
+        @include for-desktop{
+            @include flex($justify:space-between);
+            padding: 25px 0 30px 0;
+        }
+        .account_title{
+            @include font(24px,500,32px);
+            padding: 25px 0 25px 19px; 
+
+            //? FOR-DESKTOP ?//
+            @include for-desktop{
+                padding: 0; 
+            }
+        }
+    }
+}
+
+.account_button{
+    display: flex;
+    overflow-x: scroll;
+    
+    //? FOR-DESKTOP ?//
+    @include for-desktop{
+        overflow: hidden;
+    }
+
+    div{
+        display: flex;
+        margin-bottom: 18px;
+        gap:27px;
+
+        //? FOR-DESKTOP ?//
+        @include for-desktop{
+            margin: 0;
+            @include flex($align:center);
+        }
+    }
+            
+    //* BUTTON CONNECT *//
+    .connect{
+        margin-left: 19px;
+        width: 210px;
+        height: 40px;
+        border: 1px solid $semantic-default;
+        border-radius:8px;
+        background-color:white;
+        @include font(14px,normal,18px);
+        color:$semantic-default;
+        text-align: center;
+
+        &:hover{
+            background-color: $semantic-hover;
+            color:white;
+            border:none;
+            cursor: pointer;
+        }
+        &:focus{
+            background-color: $semantic-press;
+            color:white;
+            border:none;
+        }
+    }
+
+    //* BUTTON CREATE *//
+    .create{
+        width: 200px;
+        height: 40px;
+        border-radius:8px;
+        border: none;
+        background-color:$semantic-default;
+        @include font(14px,normal,18px);
+        color:white;
+        text-align: center;
+
+        &:hover{
+            background-color: $light;
+            color:$semantic-default;
+            border: 1px solid $semantic-default;
+            cursor: pointer;
+        }
+        &:focus{
+            background-color: $semantic-press;
+            color:white;
+            border:none;
+        }
+    }
+}
+ 
+.total{
+    @include flex($justify:center,$align:center);
+
+    &_btn{
+        width: 353px;
+        height: 60px;
+        padding: 0 10px;
+        margin-top: 15px;
+        @include  flex(nowrap,row,space-between,center);
+
+        //? FOR-DESKTOP ?//
+        @include for-desktop{
+            margin: 8px 8px 0 8px;
+            width: 100%;
+            height: 100px;
+            padding: 0;
+        }
+
+        .total-cost{
+            padding-left:5px;
+            @include font(16px,normal,20px);
+
+            //? FOR-DESKTOP ?//
+            @include for-desktop{
+                @include font(24px,normal,32px);
+                padding-left:40px; 
+            }
+            span{
+                @include font(20px,normal,24px);
+
+                //? FOR-DESKTOP ?//
+                @include for-desktop{
+                    @include font(34px,600,48px);
+                }
+            }
+        }
+    }
+    
+    .withdraw-now{
+        width: 130px;
+        height: 40px;
+        border-radius:8px;
+        border: none;
+        background-color:white;
+        text-align: center;
+        @include font(14px,normal,18px);
+        color:$black;
+
+        &:hover{
+            background-color: $gray3;
+            color:white;
+            cursor: pointer;
+        }
+        &:focus{
+            background-color: $gray2;
+            color:white;
+        }
+
+        //? FOR-DESKTOP ?//
+        @include for-desktop{
+            margin-right:40px; 
+        }
+    }
+}
+
+.title-activity{
+    width: 330px;
+    margin: 30px 0;
+    padding: 0 19px;
+    @include flex($justify:flex-start);
+    p{
+        @include font(16px,600,20px);
+        color: $black;      
+    }
+
+    //? FOR-DESKTOP ?//
+    @include for-desktop{
+        margin: 30px 0 15px 0; 
+    }
+}
+
+//* CARD *//
+.card_header{
+    display: none;
+
+    //? FOR-DESKTOP ?//
+    @include for-desktop{
+        display: block;
+    }
+
+    &_content{
+        //? FOR-DESKTOP ?//
+        @include for-desktop{
+            @include flex(nowrap, row,space-between,center);
+        }
+    }
+}
+
+.card-content{
+    padding: 0 19px;
+
+    div{
+        width: 100%;
+        padding-top: 20px;
+        @include flex($direction:row);
+
+        p{
+            width: 50%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            @include font(16px,normal,20px);
+        }
+
+        .amount{
+            @include font(17px,600,20px);
+        }
+        .pending{
+            color:$pending;
+        }
+        .paid{
+            color:$semantic-default;
+        }
+        .canceled{
+            color:$canceled;
+        }
+        
+    }   
+}
+
+//? FOR-DESKTOP ?//
+@include for-desktop{
+    .card-content{
+        padding: 0 18px;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 30px;
+        height: 100%;
+        div{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap:40px;
+    
+            p{
+                width: 50%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                @include font(15px,normal,20px);
+                overflow:visible;    
+            }
+    
+            .topic{
+                @include for-desktop{
+                    width: 85%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+    
+            .amount{
+                    @include font(17px,600,20px);
+                }
+                .pending{
+                    color:$pending;
+                }
+                .paid{
+                    color:$semantic-default;
+                }
+                .canceled{
+                    color:$canceled;
+                }
+        }
+    }
+}
+
+.card_header_content{
+    padding: 30px 0 20px 0;
+    border-top: 3px solid $background;
+    padding: 0 18px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    height: 100%;
+    div{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap:40px;
+
+        p{
+            width: 100%;
+            @include font(14px,normal,20px);
+            color:$gray3;
+        }
+
+        .status-header{
+            padding-left: 10px;
+        }
+    
+    }
+    
+}
+
+.card,
+.card_dark,
+.card_header{
+    height: 130px;
+
+    //? FOR-DESKTOP ?//
+    @include for-desktop{
+        height: 60px;
+        margin: 0 8px;
+    }
+}
+
+//* BACKGROUND DARK-EVEN *//
+.card:nth-child(even){
+    background-color: $background;
+}
+
+//* PAGE *//
+.page{
+    height: 185px;
+    @include flex($justify:center,$align:center);
+
+    //? FOR-DESKTOP ?//
+    @include for-desktop{
+        height: 150px;
+    }
+
+    div{
+        @include flex($justify:center,$align:center);
+        gap:20px;
+
+        img:hover{
+            background-color: $gray4;
+            border-radius:20px;
+            cursor: pointer;
+        }
+
+        span{
+            @include font(20px,normal,25px); 
+            @include flex($justify:center,$align:center);
+            width: 32px;
+            cursor: pointer;
+           
+            &:hover{
+                background: $green-hover;
+                color:white;
+                border-radius: 8px;
+                height: 40px;
+            }
+        }
+        .six{
+            background: $green-btn;
+            color:white;
+            border-radius: 8px;
+            width: 32px;
+            height: 40px;
+            @include flex($justify:center,$align:center);
+        }
+
+        .seven{
+            display: none;
+
+           //? FOR-DESKTOP ?//
+            @include for-desktop{
+                @include flex($justify:center,$align:center);
+            }
+        }
+    }
+}

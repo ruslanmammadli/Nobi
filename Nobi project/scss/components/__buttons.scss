@@ -1,0 +1,17 @@
+//* Green Buttons *//
+
+.green-btn{
+    background-color: $green-btn;
+    border-radius: 8px;
+    cursor: pointer;
+
+    color: #FFFFFF;
+    border:none;
+
+    &:hover{
+        background-color: $green-hover;
+    }
+    &:focus{
+        background-color: $green-press;
+    }
+}

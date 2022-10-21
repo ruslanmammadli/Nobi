@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Calendar</title>
+
+    <script src="https://kit.fontawesome.com/b8adea1cc3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    
+</head>
+<body>
+    <div class="container">
+       <!-------------------------HEADER SECTION------------------------->
+       <header id="header">
+        <nav class="navbar">  <!-- NAVBAR -->
+            <div class="menu-logo">
+                <div class="navbar_toggler"> <!-- NAVBAR-TOGGLE -->
+                    <div id="left-line"></div>
+                    <div id="hide-line"></div>
+                    <div id="right-line"></div>
+                </div>
+                <div class="navbar_brand"> <!-- LOGO -->
+                    <img class="logo" src="../image/Logo.svg" alt="Logo">
+                    <img class="nobi-logo" src="../image/Nobi.svg" alt="Nobi">
+                </div>
+            </div>
+            <div class="profile-content">
+                <form action=""> <!-- SEARCH -->
+                    <input class="search-input" type="search" placeholder="Search">
+                    <img class="search-icon" src="../image/search.svg" alt="">
+                </form>
+                <button class="upload">Upload</button> <!-- UPLOAD -->
+                <img class="notification" src="../image/notification.svg" alt=""> <!-- NOTIFICATION -->
+                <div class="img-profile"> <!-- PROFILE-IMAGE -->
+                    <img class="img-prof" src="../image/prof-img.svg" alt="">
+                </div>
+            </div>
+        </nav>
+    </header>
+</div>
+<div class="navbar-collapse"> <!-- NAVBAR-MENU -->
+    <ul class="nav-links">
+      <li><a class="nav-link" href="#">Home</a></li>
+      <li><a class="nav-link-pc" href="#">Features</a></li>
+      <li><a class="nav-link-pc" href="#">Support</a></li>
+      <li><a class="nav-link" href="#">Other menu</a></li>
+      <li><a class="nav-link" href="#">Contact</a></li>
+    </ul>
+</div>
+
+     <!-------------------------MAIN SECTION------------------------->
+     <section id="main-calendar">
+        <div class="container">
+            <!-- PROFILE -->
+            <div class="profile-container"> 
+                <div class="profile">
+                    <div class="profile_user">
+                        <div class="profile_user_img">
+                            <img src="../image/prof-img.svg" alt="">
+                        </div>
+                        <div class="profile_user_title">
+                            <h3>Ulvin Omarov</h3>
+                            <div>
+                                <label for="">UX designer</label>
+                                <img src="../image/star.svg" alt="">
+                                <p>4.7</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile_menu">
+                        <a href="#">
+                            <button class="profile_menu_item">
+                                <img class="filter-light" src="../image/gallery.svg" alt="">
+                                <p>My posts</p>
+                            </button>
+                        </a>
+                        <a href="./calendar.html">
+                            <button class="profile_menu_item green-btn">
+                                <img src="../image/calendar.dark.svg" alt="">
+                                <p>Calendar</p>
+                            </button>
+                        </a>
+                        <a href="./prof_balance.html">
+                            <button class="profile_menu_item">
+                                <img class="filter-light" src="../image/money.dark.svg" alt="">
+                                <p>Balance</p>
+                            </button>
+                        </a>
+                        <a href="#">
+                            <button class="profile_menu_item">
+                                <img class="filter-light" src="../image/gallery.svg" alt="">
+                                <p>Payouts</p>
+                            </button>
+                        </a>
+                        <a href="#">
+                            <button class="profile_menu_item">
+                                <img class="filter-light" src="../image/settings.svg" alt="">
+                                <p>Logout</p>
+                            </button>
+                        </a>
+                        <div class="profile_menu_item">
+                            <img class="filter-light" src="../image/log out.svg" alt="">
+                            <p>Logout</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calendar-container">  <!-- CALENDAR -->
+                <div class="calendar-save">
+                    <div class="title-calendar">
+                        <h3>Calendar</h3>
+                    </div>
+                    <div class="save">
+                        <button class="green-btn">Save changes</button>
+                    </div>
+                </div>
+                <div class="calendar-1"> <!-- MINI CALENDAR SECTION -->
+                    <div class="choose-calendar">
+                        <div class="choose">
+                            <div class="choose_date">
+                                <p>Choose date</p>
+                            </div>
+                            <div class="choose_day">
+                                <p>Day array</p>
+                                <div>
+                                    <img src="../image/down.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sm-calendar">  <!-- MINI CALENDAR -->
+                            <div class="sm-month">
+                                <div class="sm-date">
+                                    <h1></h1>
+                                    <p></p>
+                                </div>
+                                <div class="arrow">
+                                    <div class="prev">
+                                        <img src="../image/prev.svg" alt="">
+                                    </div>
+                                    <div class="next">
+                                        <img src="../image/next.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sm-weekdays">
+                                <div>S</div>
+                                <div>M</div>
+                                <div>T</div>
+                                <div>W</div>
+                                <div>T</div>
+                                <div>F</div>
+                                <div>S</div>
+                            </div>
+                            <div class="sm-days">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="array">
+                        <div class="array_time">
+                            <p>Set time array <span>(3h)</span></p>
+                        </div>
+                        <button class="array_a_m">
+                            <div class="from">
+                                <p><span>From:</span>9:00</p>
+                                <img src="../image/arrow down.svg" alt="">
+                            </div>
+                            <div class="to">
+                                <p><span>To:</span>12:00</p>
+                                <img src="../image/arrow down.svg" alt="">
+                            </div>
+                        </button>
+                        <div class="array_second">
+                            <p>Second array<span>(5h)</span></p>
+                            <p class="delete">Delete time</p>
+                        </div>
+                        <button class="array_p_m">
+                            <div class="from">
+                                <p><span>From:</span>15:00</p>
+                                <img src="../image/arrow down.svg" alt="">
+                            </div>
+                            <div class="to">
+                                <p><span>To:</span>20:00</p>
+                                <img src="../image/arrow down.svg" alt="">
+                            </div>
+                        </button>
+                        <div class="array_add">
+                            <img src="../image/add.svg" alt="">
+                            <p>Add more time array</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-2">  <!-- BIG CALENDAR SECTION -->
+                    <div class="calendar_header">
+                        <div class="calendar-month">
+                            <div class="calendar-month_title">
+                                <p>May, 2021</p>
+                            </div>
+                            <div class="arrow">
+                                <div class="prev">
+                                    <img src="../image/prev.svg" alt="">
+                                </div>
+                                <div class="next">
+                                    <img src="../image/next.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="select-date">
+                            <button class="date-dark">
+                                <div class="from">
+                                    <p><span>From:</span>09:00</p>
+                                    <img src="../image/arrow down.svg" alt="">
+                                </div>
+                                <div class="to">
+                                    <p><span>To:</span>10:30</p>
+                                    <img src="../image/arrow down.svg" alt="">
+                                </div>
+                            </button>
+                            <button class="whole">
+                                <p>Whole month</p>
+                                <img src="../image/arrow down.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="calendar_table">  <!-- BIG CALENDAR -->
+                        <div class="weekdays">
+                            <div>Mon</div>
+                            <div>Tue</div>
+                            <div>Wed</div>
+                            <div>Thu</div>
+                            <div>Fri</div>
+                            <div>Sat</div>
+                            <div>Sun</div>
+                        </div>
+                        <div class="days">
+                            <div class="prev-date" id="click-day">
+                                <p>26</p>
+                                <p></p>
+                            </div>
+                            <div class="prev-date" id="click-day">
+                                <p>27</p>
+                                <p></p>
+                            </div>
+                            <div class="prev-date" id="click-day">
+                                <p>28</p>
+                                <p></p>
+                            </div>
+                            <div class="prev-date" id="click-day">
+                            <p>29</p>
+                            <p></p>
+                            </div>
+                            <div class="prev-date" id="click-day">
+                                <p>30</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>1</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>2</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>3</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>4</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>5</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>6</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>7</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>8</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>9</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>10</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>11</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>12</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>13</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>14</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>15</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>16</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>17</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>18</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>19</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>20</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>21</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>22</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>23</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>24</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>25</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>26</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>27</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>28</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>29</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>30</p>
+                                <p></p>
+                            </div>
+                            <div id="click-day" class="day">
+                                <p>31</p>
+                                <p></p>
+                            </div>
+                            <div class="next-date" id="click-day">
+                                <p>1</p>
+                                <p></p>
+                            </div>
+                            <div class="next-date" id="click-day">
+                                <p>2</p>
+                                <p></p>
+                            </div>
+                            <div class="next-date" id="click-day">
+                                <p>3</p>
+                                <p></p>
+                            </div>
+                            <div class="next-date" id="click-day">
+                                <p>4</p>
+                                <p></p>
+                            </div>
+                            <div class="next-date" id="click-day">
+                                <p>5</p>
+                                <p></p>
+                            </div>
+                            <div class="next-date" id="click-day">
+                                <p>6</p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calendar_meets"> <!-- CALENDAR MEETS -->
+                        <div class="meet-title">
+                            <h4 class="meet-title">Meets</h4>
+                        </div>
+                        <div class="meet-dates">
+                            <div>
+                                <p class="date">May 10, 2021 </p>
+                                <ul>
+                                    <li>
+                                        <img src="../image/point.svg" alt="">
+                                        <p>9:00 - 10:30 <span class="hyphen">-</span> “Grow your creative business in design field”</p>
+                                    </li>
+                                    <li>
+                                        <img src="../image/point.svg" alt="">
+                                        <p>11:00 - 12:00 <span class="hyphen">-</span> “Demystifying Inspiration: Four Ways to Spark Creativity”</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="line">
+                                <p class="date">May 14, 2021</p>
+                                <ul>
+                                    <li>
+                                        <img src="../image/point.svg" alt="">
+                                        <p>14:00 - 14:30 <span class="hyphen">-</span> “Behind the design: The app that wants to make freelancers more successful”</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <p class="date">May 20, 2021</p>
+                                <ul>
+                                    <li>
+                                        <img src="../image/point.svg" alt="">
+                                        <p>8:00 - 9:00 <span class="hyphen">-</span> “Your personal brand matters: Here are 3 ways you can start investing in it”</p>
+                                    </li>
+                                    <li>
+                                        <img src="../image/point.svg" alt="">
+                                        <p>9:00 - 11:00 <span class="hyphen">-</span> “5 steps to designing a personal logo”</p>
+                                    </li>
+                                    <li>
+                                        <img src="../image/point.svg" alt="">
+                                        <p>17:00 - 18:30 <span class="hyphen">-</span> “5 steps to finding the right freelance graphic designer”</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-------------------------FOOTER SECTION------------------------->
+    <footer class="footer">
+        <div class="footer_link">
+            <ul>
+                <li>About us</li>
+                <li>FAQ</li>
+                <li>Privacy</li>
+                <li>Terms</li>
+              </ul>
+        </div>
+        <div class="footer_copyright">
+            <p> &copy; 2021 Nobi. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="../js/calendar.js"></script>
+    <script src="../js/header.js"></script>
+</body>
+</html>

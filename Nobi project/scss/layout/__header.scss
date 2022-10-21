@@ -1,0 +1,228 @@
+//* NAVBAR *//
+.navbar{
+    height: 56px;
+    @include flex(nowrap,row,space-between,center);
+
+    //? FOR-DESKTOP ?//
+    @include for-desktop{
+        height: 88px;
+    }
+
+    //* LOGO *//
+    &_brand{
+        .logo{
+            display: none;
+
+            //? FOR-DESKTOP ?//
+            @include for-desktop{
+                display: block;
+                width: 27px;
+                height: 28px;
+                position: absolute;
+                top:14px;
+            }
+        }
+    }
+
+    .menu-logo{
+        position: relative;
+        width: 50%;
+        height: 56px;
+
+        .nobi-logo{
+            width: 55px;
+            height: 25px;
+            position: absolute;
+            top:14px;
+            left: 50px;
+
+            //? FOR-DESKTOP ?//
+            @include for-desktop{
+                width: 98px;
+                height: 28px;
+                left: 20px;
+                top:10px;
+
+            }
+        
+        }
+    }
+
+    .profile-content{
+        width: 50%;
+        @include flex(nowrap,row, flex-end,center);
+        gap:25px;
+
+        form{
+            //? FOR-DESKTOP ?//
+            @include for-desktop{
+                position: relative;
+                width: 270px;
+                height: 40px;
+            }
+
+            //* SEARCH *//
+            .search-input{
+                @include for-desktop{
+                    padding-left: 40px;
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    display: block;
+                    background-color:$background2;
+                    border-radius:8px;
+                    border:none;
+                }
+
+                &:focus{
+                    outline: none;
+                    border: 2px solid $semantic1;
+                }
+            }
+
+            .search-icon{
+
+                //? FOR-DESKTOP ?//
+                @include for-desktop{
+                    position: absolute;
+                    top:50%;
+                    transform: translateY(-50%);
+                    left:12px;
+                }
+            }
+        }
+
+        //* UPLOAD *//
+        .upload{
+
+            //? FOR-DESKTOP ?//
+            @include for-desktop{
+                display: block;
+                border-radius:10px;
+                margin: 0 20px;
+                width: 130px;
+                height: 40px;
+                border: 1px solid $green-btn;
+                background-color:white;
+                @include font(14px, normal, 16px);
+                color:$green-btn;
+            }
+
+            &:hover{
+                background-color: $green-hover;
+                color:white;
+                cursor: pointer;
+            }
+
+            &:focus{
+                background-color: $green-press;
+                color:white;
+            }
+        }
+    }
+}
+
+//* NAVBAR MENU SHOW for JS *//
+.show{
+    left: 0 !important;
+}
+
+//* NAVBAR MENU *//
+.navbar-collapse{
+        position: absolute;
+        top:0;
+        left: -100%;
+        width: 80%;
+        transition: 1s;
+        z-index: 5;
+
+    .nav-links{
+        height: 100vh;
+        background-color:white;
+        padding-top: 30%;
+
+        li{
+            padding: 20px 50px;
+            cursor: pointer;
+            width: 100%;
+            transition: 0.2s;
+            
+            a{
+                @include font(16px,normal,20px);
+                color:$black;
+            }
+
+            &:hover{
+                background-color:$background2;
+            }
+        }
+    }
+
+    //? FOR-DESKTOP ?//
+    @include for-desktop{
+        width:30%;
+        top:15px;
+        left: 14%;
+        padding: 0;
+        transition:0s;
+
+        .nav-links{
+            height: 57px;
+            @include flex(nowrap,row,center,center);
+            gap:70px;
+            padding: 0;
+            background-color:transparent;
+
+            li{
+                padding: 0;
+                transition:0s;
+                &:hover{
+                    background-color: white;
+                }
+            }
+        }
+
+        .nav-link{
+            display: none;
+        } 
+
+        .nav-link-pc{
+            @include font(16px, normal,20px);
+            color:$black;
+        }
+    }
+}
+
+
+.search-icon,.notification,.img-profile{
+    @include flex($align:center);
+}
+
+.img-profile{
+    img{
+        width: 40px;
+        height: 40px;
+    }
+}
+.upload, .search-input{
+    display: none;
+}
+
+//* NAVBAR TOGGLE *//
+.navbar_toggler{
+    position: absolute;
+    top:18px;
+    z-index: 6;
+    cursor: pointer;
+
+    div{
+        height: 2.4px;
+        width: 22px;
+        background-color: #2E3A59;
+        margin: 4px;
+    }
+    //? FOR-DESKTOP ?//
+    @include for-desktop{
+        display: none;
+    }
+}

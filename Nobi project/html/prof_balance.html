@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Profile balance</title>
+
+    <script src="https://kit.fontawesome.com/b8adea1cc3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-------------------------HEADER SECTION------------------------->
+        <header id="header">
+            <nav class="navbar">  <!-- NAVBAR -->
+                <div class="menu-logo">
+                    <div class="navbar_toggler"> <!-- NAVBAR-TOGGLE -->
+                        <div id="left-line"></div>
+                        <div id="hide-line"></div>
+                        <div id="right-line"></div>
+                    </div>
+                    <div class="navbar_brand"> <!-- LOGO -->
+                        <img class="logo" src="../image/Logo.svg" alt="Logo">
+                        <img class="nobi-logo" src="../image/Nobi.svg" alt="Nobi">
+                    </div>
+                </div>
+                <div class="profile-content">
+                    <form action=""> <!-- SEARCH -->
+                        <input class="search-input" type="search" placeholder="Search">
+                        <img class="search-icon" src="../image/search.svg" alt="">
+                    </form>
+                    <button class="upload">Upload</button> <!-- UPLOAD -->
+                    <img class="notification" src="../image/notification.svg" alt=""> <!-- NOTIFICATION -->
+                    <div class="img-profile"> <!-- PROFILE-IMAGE -->
+                        <img class="img-prof" src="../image/prof-img.svg" alt="">
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="navbar-collapse"> <!-- NAVBAR-MENU -->
+        <ul class="nav-links">
+          <li><a class="nav-link" href="#">Home</a></li>
+          <li><a class="nav-link-pc" href="#">Features</a></li>
+          <li><a class="nav-link-pc" href="#">Support</a></li>
+          <li><a class="nav-link" href="#">Other menu</a></li>
+          <li><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+    </div>
+    <!-------------------------MAIN SECTION------------------------->
+    <section id="main-balance">
+        <div class="container">
+            <!-- PROFILE -->
+            <div class="profile-container"> <!-- PROFILE -->
+                <div class="profile">
+                    <div class="profile_user">
+                        <div class="profile_user_img">
+                            <img src="../image/prof-img.svg" alt="">
+                        </div>
+                        <div class="profile_user_title">
+                            <h3>Ulvin Omarov</h3>
+                            <div>
+                                <label for="">UX designer</label>
+                                <img src="../image/star.svg" alt="">
+                                <p>4.7</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile_menu">
+                        <a href="#">
+                            <button class="profile_menu_item">
+                                <img class="filter-light" src="../image/gallery.svg" alt="">
+                                <p>My posts</p>
+                            </button>
+                        </a>
+                        <a href="./calendar.html">
+                            <button class="profile_menu_item">
+                                <img class="filter-light" src="../image/calendar.svg" alt="">
+                                <p>Calendar</p>
+                            </button>
+                        </a>
+                        <a href="./prof_balance.html">
+                            <button class="profile_menu_item green-btn">
+                                <img src="../image/money.svg" alt="">
+                                <p>Balance</p>
+                            </button>
+                        </a>
+                        <a href="#">
+                            <button class="profile_menu_item">
+                                <img class="filter-light" src="../image/gallery.svg" alt="">
+                                <p>Payouts</p>
+                            </button>
+                        </a>
+                        <a href="#">
+                            <button class="profile_menu_item">
+                                <img class="filter-light" src="../image/settings.svg" alt="">
+                                <p>Logout</p>
+                            </button>
+                        </a>
+                        <div class="profile_menu_item">
+                            <img class="filter-light" src="../image/log out.svg" alt="">
+                            <p>Logout</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="balance-container"> <!-- BALANCE -->
+                <div class="balance">
+                    <div class="balance_account">
+                        <div class="account_title">
+                            <h3>Balance</h3>
+                        </div>
+                        <div class="account_button">
+                            <div>
+                                <button class="connect">
+                                    Connect bank account
+                                </button>
+                                <button class="create">
+                                    Create bank account
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="balance_activity">
+                            <div class="total">
+                                <div class="total_btn green-btn" >
+                                    <p class="total-cost">Total: <span>1420 USD</span></p>
+                                    <button class="withdraw-now">
+                                        Withdraw now
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-activity">
+                                <p>Balance activity</p>
+                            </div>
+                            <div class="balance_card">  <!-- BALANCE CARD -->
+                                <div class="card_header">
+                                    <div class="card_header_content">
+                                        <div>
+                                            <p>User</p>
+                                            <p class="topic-header">Topic</p>
+                                        </div>
+                                        <div>
+                                            <p class="date-header">Date</p>
+                                            <p class="total-header">Total hour</p>
+                                        </div>
+                                        <div>
+                                            <p class="amount-header">Amount</p>
+                                            <p class="status-header">Status</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div>
+                                            <p class="user">Robert Patinson</p>
+                                            <p class="topic">Grow your creative business systems</p>
+                                        </div>
+                                        <div>
+                                            <p class="date">30.04.21</p>
+                                            <p class="total-hour">1h 30min</p>
+                                        </div>
+                                        <div>
+                                            <p class="amount">125 USD</p>
+                                            <p class="pending">Pending</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div>
+                                            <p class="user">Robert Patinson</p>
+                                            <p class="topic">Grow your creative business systems</p>
+                                        </div>
+                                        <div>
+                                            <p class="date">30.04.21</p>
+                                            <p class="total-hour">1h 30min</p>
+                                        </div>
+                                        <div>
+                                            <p class="amount">125 USD</p>
+                                            <p class="pending">Pending</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div>
+                                            <p class="user">Robert Patinson</p>
+                                            <p class="topic">Grow your creative business systems</p>
+                                        </div>
+                                        <div>
+                                            <p class="date">30.04.21</p>
+                                            <p class="total-hour">1h 30min</p>
+                                        </div>
+                                        <div>
+                                            <p class="amount">125 USD</p>
+                                            <p class="paid">Paid</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div>
+                                            <p class="user">Robert Patinson</p>
+                                            <p class="topic">Grow your creative business systems</p>
+                                        </div>
+                                        <div>
+                                            <p class="date">30.04.21</p>
+                                            <p class="total-hour">1h 30min</p>
+                                        </div>
+                                        <div>
+                                            <p class="amount">125 USD</p>
+                                            <p class="paid">Paid</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div>
+                                            <p class="user">Robert Patinson</p>
+                                            <p class="topic">Grow your creative business systems</p>
+                                        </div>
+                                        <div>
+                                            <p class="date">30.04.21</p>
+                                            <p class="total-hour">1h 30min</p>
+                                        </div>
+                                        <div>
+                                            <p class="amount">125 USD</p>
+                                            <p class="canceled">Canceled</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div>
+                                            <p class="user">Robert Patinson</p>
+                                            <p class="topic">Grow your creative business systems</p>
+                                        </div>
+                                        <div>
+                                            <p class="date">30.04.21</p>
+                                            <p class="total-hour">1h 30min</p>
+                                        </div>
+                                        <div>
+                                            <p class="amount">125 USD</p>
+                                            <p class="paid">Paid</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div>
+                                            <p class="user">Robert Patinson</p>
+                                            <p class="topic">Grow your creative business systems</p>
+                                        </div>
+                                        <div>
+                                            <p class="date">30.04.21</p>
+                                            <p class="total-hour">1h 30min</p>
+                                        </div>
+                                        <div>
+                                            <p class="amount">125 USD</p>
+                                            <p class="pending">Pending</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div>
+                                            <p class="user">Robert Patinson</p>
+                                            <p class="topic">Grow your creative business systems</p>
+                                        </div>
+                                        <div>
+                                            <p class="date">30.04.21</p>
+                                            <p class="total-hour">1h 30min</p>
+                                        </div>
+                                        <div>
+                                            <p class="amount">125 USD</p>
+                                            <p class="pending">Pending</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div>
+                                            <p class="user">Robert Patinson</p>
+                                            <p class="topic">Grow your creative business systems</p>
+                                        </div>
+                                        <div>
+                                            <p class="date">30.04.21</p>
+                                            <p class="total-hour">1h 30min</p>
+                                        </div>
+                                        <div>
+                                            <p class="amount">125 USD</p>
+                                            <p class="paid">Paid</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div>
+                                            <p class="user">Robert Patinson</p>
+                                            <p class="topic">Grow your creative business systems</p>
+                                        </div>
+                                        <div>
+                                            <p class="date">30.04.21</p>
+                                            <p class="total-hour">1h 30min</p>
+                                        </div>
+                                        <div>
+                                            <p class="amount">125 USD</p>
+                                            <p class="paid">Paid</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div>
+                                            <p class="user">Robert Patinson</p>
+                                            <p class="topic">Grow your creative business systems</p>
+                                        </div>
+                                        <div>
+                                            <p class="date">30.04.21</p>
+                                            <p class="total-hour">1h 30min</p>
+                                        </div>
+                                        <div>
+                                            <p class="amount">125 USD</p>
+                                            <p class="canceled">Canceled</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div>
+                                            <p class="user">Robert Patinson</p>
+                                            <p class="topic">Grow your creative business systems</p>
+                                        </div>
+                                        <div>
+                                            <p class="date">30.04.21</p>
+                                            <p class="total-hour">1h 30min</p>
+                                        </div>
+                                        <div>
+                                            <p class="amount">125 USD</p>
+                                            <p class="paid">Paid</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div>
+                                            <p class="user">Robert Patinson</p>
+                                            <p class="topic">Grow your creative business systems</p>
+                                        </div>
+                                        <div>
+                                            <p class="date">30.04.21</p>
+                                            <p class="total-hour">1h 30min</p>
+                                        </div>
+                                        <div>
+                                            <p class="amount">125 USD</p>
+                                            <p class="canceled">Canceled</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div>
+                                            <p class="user">Robert Patinson</p>
+                                            <p class="topic">Grow your creative business systems</p>
+                                        </div>
+                                        <div>
+                                            <p class="date">30.04.21</p>
+                                            <p class="total-hour">1h 30min</p>
+                                        </div>
+                                        <div>
+                                            <p class="amount">125 USD</p>
+                                            <p class="paid">Paid</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div>
+                                            <p class="user">Robert Patinson</p>
+                                            <p class="topic">Grow your creative business systems</p>
+                                        </div>
+                                        <div>
+                                            <p class="date">30.04.21</p>
+                                            <p class="total-hour">1h 30min</p>
+                                        </div>
+                                        <div>
+                                            <p class="amount">125 USD</p>
+                                            <p class="pending">Pending</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div>
+                                            <p class="user">Robert Patinson</p>
+                                            <p class="topic">Grow your creative business systems</p>
+                                        </div>
+                                        <div>
+                                            <p class="date">30.04.21</p>
+                                            <p class="total-hour">1h 30min</p>
+                                        </div>
+                                        <div>
+                                            <p class="amount">125 USD</p>
+                                            <p class="pending">Pending</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div>
+                                            <p class="user">Robert Patinson</p>
+                                            <p class="topic">Grow your creative business systems</p>
+                                        </div>
+                                        <div>
+                                            <p class="date">30.04.21</p>
+                                            <p class="total-hour">1h 30min</p>
+                                        </div>
+                                        <div>
+                                            <p class="amount">125 USD</p>
+                                            <p class="paid">Paid</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div>
+                                            <p class="user">Robert Patinson</p>
+                                            <p class="topic">Grow your creative business systems</p>
+                                        </div>
+                                        <div>
+                                            <p class="date">30.04.21</p>
+                                            <p class="total-hour">1h 30min</p>
+                                        </div>
+                                        <div>
+                                            <p class="amount">125 USD</p>
+                                            <p class="paid">Paid</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div>
+                                            <p class="user">Robert Patinson</p>
+                                            <p class="topic">Grow your creative business systems</p>
+                                        </div>
+                                        <div>
+                                            <p class="date">30.04.21</p>
+                                            <p class="total-hour">1h 30min</p>
+                                        </div>
+                                        <div>
+                                            <p class="amount">125 USD</p>
+                                            <p class="canceled">Canceled</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page">  <!-- PAGE -->
+                                <div>
+                                    <img src="../image/scroll left.svg" alt="">
+                                    <span>4</span>
+                                    <span>5</span>
+                                    <span class="six">6</span>
+                                    <span class="seven">7</span>
+                                    <span>...</span>
+                                    <span>12</span>
+                                    <img src="../image/scroll right.svg" alt="">
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+</div>
+        
+
+    <!-------------------------FOOTER SECTION------------------------->
+    <footer class="footer">
+        <div class="footer_link">
+            <ul>
+                <li>About us</li>
+                <li>FAQ</li>
+                <li>Privacy</li>
+                <li>Terms</li>
+              </ul>
+        </div>
+        <div class="footer_copyright">
+            <p> &copy; 2021 Nobi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- HEADER JS -->
+    <script src="../js/header.js"></script>
+</body>
+</html>
